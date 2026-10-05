@@ -5,12 +5,22 @@
 ## Требования
 
 - Windows 10/11 x64
-- [.NET 10 SDK](https://dotnet.microsoft.com/download)
-- Установленный через Steam Black Myth: Wukong Benchmark Tool, **хотя бы раз запущенный вручную** (чтобы появился базовый конфиг)
-
-> Надо хоть раз запустить, потому что утилита правит существующую конфигурацию, а не создаёт новую.
+- Установленный через Steam Black Myth: Wukong Benchmark Tool, **хотя бы раз запущенный вручную** (утилита правит существующий конфиг, а не создаёт новый)
+- Запущенный Steam
 
 ## Запуск
+
+1. Скачайте `WukongBench.exe` из [Releases](ссылка).
+2. Положите его в любую папку с правами на запись (не в `Program Files`): рядом будет создана папка `results`.
+3. Запустите. Если Windows покажет «Windows защитила ваш компьютер» — «Подробнее» → «Выполнить в любом случае» (exe не подписан).
+
+Если бенчмарк установлен не в стандартную папку Steam, передайте путь аргументом:
+
+    WukongBench.exe "D:\SteamLibrary\steamapps\common\Black Myth Wukong Benchmark Tool"
+
+### Сборка из исходников
+
+Нужен [.NET 10 SDK](https://dotnet.microsoft.com/download):
 
 ```
 dotnet run
