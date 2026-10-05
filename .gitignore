@@ -1,0 +1,12 @@
+# Сборка
+bin/
+obj/
+
+# Результаты прогонов
+results/
+
+# IDE
+.vs/
+.idea/
+.vscode/
+*.user
